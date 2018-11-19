@@ -1,0 +1,22 @@
+<div class="container-1 fullh">
+     
+    <h1>Register</h1>
+    <form action="/register" method='post'>
+    <div class="container-1 form-container"></div>
+    {{#if usernameError}}
+        <p class="success">{{usernameError}}</p>
+    {{/if}}
+        <input name='username' class='text-input' type="text" placeholder='Username'>
+    {{#if passwordError}}
+        <p class="success">{{passwordError}}</p>
+    {{/if}}
+        <input name='password' class='text-input' type="password" placeholder='Password' >
+        <input name='passwordVerify' class='text-input' type="password" placeholder='repeat Password' >
+        <input name='email' class='text-input' type="email" placeholder='Email' >
+        <input name='birthdate' class='text-input' type="text" placeholder='date of Birth' >
+        {{!-- <div class="g-recaptcha" data-sitekey="6LfexHsUAAAAADRY7ODNCvhsKUpBSpeOz2RaDmUX"></div> --}}
+        <input type="submit" class='btn blue'>
+    </form>
+
+    
+</div>

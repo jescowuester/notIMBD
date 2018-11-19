@@ -1,0 +1,23 @@
+
+<div class="container-1 fullh">
+    <div>
+<h1>Search for Information about your favorite movie</h1>
+ </div>
+ <div>
+    <form action="/movies" method='post'>
+     <input class='text-input' type="text" placeholder='search for movie' name='search' >
+     <input type="submit" class='btn blue'>
+    </form>
+ </div>
+ {{#if info}}
+ <div>
+     <p class="subtitle"><span class='dark'>Title:</span> {{info.Title}}</p>
+     <p class="subtitle"><span class='dark'>Release:</span> {{info.Released}}</p>
+     <p class="subtitle"><span class='dark'>Runtime:</span> {{info.Runtime}}</p>
+     <p class="subtitle"><span class='dark'>Genre:</span> {{info.Genre}}</p>
+     <p class="subtitle"><span class='dark'>Director:</span> {{info.Director}}</p>
+ </div>
+ {{/if}}
+</div>
+
+

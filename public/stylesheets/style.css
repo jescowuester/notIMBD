@@ -1,0 +1,134 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+/* 
+#2C3E50
+#E74C3C
+#ECF0F1
+#3498DB
+#2980B9
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #2C3E50;
+}
+
+.dark{
+  color: #2C3E50;
+}
+
+.title{
+  color:#2C3E50;
+  margin: 0.5em 0;
+}
+
+.subtitle{
+  color: #E74C3C;
+  text-align: center;
+}
+
+.nav-logo{
+  font-family: 'Roboto Slab', serif;
+  margin-right: auto;
+}
+
+nav a {
+  color: #ECF0F1;
+  height: 100%;
+  display:flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 30px;
+}
+
+nav a:hover{
+  background-color: #E74C3C;
+}
+
+nav{
+  background-color: #2C3E50;
+  height: 50px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top:0;
+  /* -webkit-box-shadow: 0px 32px 19px -21px rgba(0,0,0,0.24);
+-moz-box-shadow: 0px 32px 19px -21px rgba(0,0,0,0.24); */
+  box-shadow: 22px 22px 20px -22px rgba(0, 0, 0, 0.329);
+}
+
+input{
+
+}
+
+.fullh{
+  height: 100vh;
+}
+
+.container-1{
+  background-color: #ECF0F1;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-1 form{
+  margin: 10px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.container-1 form .text-input{
+  background:transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #2C3E50;
+  margin: 10px;
+  height: 2em;
+  padding-left: 2px;
+}
+
+.container-1 form .text-input:focus{
+  outline: none;
+  border-bottom: 1.1px solid #E74C3C;
+  /* color: #2C3E50; */
+}
+
+.btn{
+  height: 40px;
+  border-radius: 3px;
+  margin: 7px;
+  border: 1px solid #2C3E50;
+}
+
+.btn:active{
+  border: 2px solid #3498DB;
+  outline: none;
+}
+
+.blue{
+  background-color:#2980B9;
+  border: 1px solid #3498DB;
+  color: #fff;
+}
+
+.success{
+  /* border: 1px solid green; */
+  border-left:4px solid rgb(40, 148, 40);
+  margin: 20px;
+  background-color: rgba(0, 255, 0, 0.192);
+  border-radius: 3px;
+  padding: 10px 0;
+}
+
+.success h4,.success p{
+  margin: 10px;
+}
